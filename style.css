@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+}
+
+body {
+    /* background-image: linear-gradient(109.6deg, rgba(156, 252, 248, 1) 11.2%, rgba(110, 123, 251, 1) 91.1%); */
+    /* background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+    background-image: linear-gradient(to left, #434343 0%, black 100%);
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(main-back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex; */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    /* margin-top: 5px; */
+    /* border: 1px solid white; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .logo {
+    margin-left: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    color: white;
+}
+
+.container .nav_bar {
+    display: flex;
+    /* border: 1px solid black; */
+    width: 40%;
+    height: 30px;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.container .nav_bar ul li {
+    display: inline;
+    padding-left: 70px;
+}
+
+.container .nav_bar ul li a {
+    color: #bfd7ff;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.container .nav_bar ul li a:hover {
+    /* border-bottom: 2px solid #caf0f8; */
+    text-decoration: underline;
+}
+
+/* .container .nav_bar ul li{
+    transition: scale 0.2s ease;
+}
+.container .nav_bar ul li:hover{
+    scale: 1.2;
+} */
+
+/* .container .nav_bar li{
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.container .nav_bar li a{
+    text-decoration: none;
+} */
+.container .nav_bar ul li .btn {
+    text-transform: uppercase;
+    border: 2px solid #9bb1ff;
+    border-radius: 5px;
+    padding: 6px;
+    font-weight: bold;
+    color: #bfd7ff;
+}
+
+.container .nav_bar ul li .btn:hover {
+    color: #e2fdff;
+    text-decoration: none;
+    background-color: #788bff;
+}
+
+/* Main  */
+
+.main {
+    position: absolute;
+    width: 300px;
+    top: 40%;
+    left: 40%;
+    text-align: center;
+
+}
+
+
+.main p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main .dnt {
+    margin-top: 20px;
+}
+
+.main .dnt a {
+    text-decoration: none;
+}
+
+.main .dnt .btn {
+    text-transform: uppercase;
+    border: 2px solid #9bb1ff;
+    border-radius: 5px;
+    padding: 6px;
+    font-weight: bold;
+    color: #bfd7ff;
+}
+
+.main .dnt .btn:hover {
+    color: #e2fdff;
+    text-decoration: none;
+    background-color: #788bff;
+}
+
+
+/* About */
+
+.about{
+    height: 70vh;
+    width: 100%;
+}
+
+.about h2 {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    font-weight: bolder;
+    font-size: 30px;
+    color: #edf6f9;
+    text-decoration: underline;
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .about_img img {
+    margin-left: 5px;
+    border: 4px solid white;
+    border-radius: 2em;
+    height: 450px;
+    width: 750px;
+}
+
+.about p {
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    line-height: 120%;
+    font-weight: 100;
+    color: #e2fdff;
+    cursor: default;
+}
+
+/* Contact  */
+
+.contact {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://img.freepik.com/free-photo/businessman-touching-virtual-screen_1232-737.jpg?w=1380&t=st=1686493192~exp=1686493792~hmac=41b65e4119c38e1a6cdccfe7aa7a44678c85716e5fa737b56f9ca9384db9955b);
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.contact .contact_head {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.contact .contact_head h3 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.contact .contact_head p {
+    padding: 2px;
+    font-size: 20px;
+}
+
+.contact .contact_form {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 2em;
+    margin-top: 15px;
+    padding: 3px;
+}
+
+.contact .contact_form h2{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #bfd7ff;
+    text-decoration: underline;
+}
+
+
+
+.contact .contact_form input {
+    margin-left: 40px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.contact .contact_form textarea {
+    display: inline;
+    position: relative;
+    margin-right: 40px;
+    margin-top: -90px;
+    padding: 15px;
+    float: right;
+    border-radius: 1.1em;
+}
+
+.contact .contact_form .btn{
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 4px;
+    border: 2px solid black;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #bfd7ff;
+    transition:  all 0.2s ease-in;
+}
+.contact .contact_form .btn:hover{
+    
+    background-color: #788bff;
+    scale: 1.1;
+    
+}
+/* Donate  */
+
+.main_head {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://img.freepik.com/free-photo/full-shot-kids-posing-outdoors_23-2148761580.jpg?w=1380&t=st=1686474653~exp=1686475253~hmac=af607f2969d3d70f62eddbf64029bf90d4adb4f337359a8cf5cc17b074577e7b);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex; */
+}
+
+.donationBtn {
+    margin-top: 20px;
+}
